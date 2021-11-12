@@ -11,8 +11,20 @@ class Inimigo:
         contador1, contador2, contador3 = 0, 0, 0
         inimigodano, inimigovida = self.dano, self.vida
         playervidalocal, playerdanolocal = playervida, playerdano
-        inimigodanolocal = inimigodano
         print("Seu oponente é um", self.raca, "chamado", self.nome)
+        if type(self) == Inimigo:
+            if inimigodano < 300:
+                print("Ele treme de uma ponta a outra no corpo, engolindo em seco. Ele claramente não quer lutar, resta saber se ele vai.")
+            elif inimigodano in range(300, 600):
+                print('Ele cerra os dentes, seus olhos tentam desviar. "Eu não quero fazer isso, amigo. Me perdoe." Ele declara, enquanto avança com remorso')
+            elif inimigodano in range(600,800):
+                print("Ele move seu pescoço de lado a outro, emitindo um estalar barulhento. Seus olhos são frios, e enxergam através de você.")
+            elif inimigodano in range(800,1000):
+                print("Ele salta de pé em outro, sua boca de poucos dentes sorri, suas mãos tremem em entusiasmo, extasiadas em derramar sangue uma vez mais.")
+            elif inimigodano > 1000:
+                print('Seu oponente já corre em sua direção com olhos doentes de um cão em frenesi. Ele range os dentes antes de bramir como uma criatura, iniciando seu ataque')
+        else:
+            pass
         while True:
             print("Você pode atacar, defender ou desviar. O que quer fazer?")
             acao = input(">")
@@ -42,7 +54,7 @@ class Inimigo:
 
 
 class Boss(Inimigo):
-    def entrada(self):
+    def entrada_agressiva(self):
         print("Você sente o chão tremer, e as paredes sacudirem. A plateia permanece calada, temerosa, apenas então explodindo em entusiasmo.")
         print(f"O portão a sua frente se abre, dele saindo uma alta figura. Um gigantesco {self.raca}. Todos repetem seu nome: {self.nome}.")
         print("Ele aponta em sua direção e traça sua garganta com seu dedão estirado. Você sente que esses podem ser seus últimos momentos.")

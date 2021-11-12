@@ -7,17 +7,13 @@ def ataqueduplo(playervidalocal, playerdanolocal, inimigovida, inimigodano):
     if mensagem == 0:
         print('Vocês atingem um ao outro com inúmeros ataques, recuando ao mesmo tempo quando a dor se torna insuportável.')
     elif mensagem == 1:
-        print(
-            'Você ergue sua arma e atinge seu oponente no ombro, sem notar que o outro também já balançava o braço, atingindo-lhe no pescoço')
+        print('Você ergue sua arma e atinge seu oponente no ombro, sem notar que o outro também já balançava o braço, atingindo-lhe no pescoço de raspão')
     elif mensagem == 2:
-        print(
-            'Notando que seu inimigo tinha uma postura larga, você abre um corte em sua perna, enquanto ele aproveita sua falta de equilíbrio, atingindo sua nuca.')
+        print('Notando que seu inimigo tinha uma postura larga, você abre um corte em sua perna, enquanto ele aproveita sua falta de equilíbrio, atingindo sua nuca.')
     elif mensagem == 3:
-        print(
-            'Seu oponente abre um corte fundo em seu queixo. Você segura o pulso deste e atinge-o com uma cabeçada no nariz, que faz sangue espirrar.')
+        print('Seu oponente abre um corte fundo em seu queixo. Você segura o pulso deste e atinge-o com uma cabeçada no nariz, que faz sangue espirrar.')
     elif mensagem == 4:
-        print(
-            'Seu oponente acerta-lhe o joelho, mas perde o equilíbrio em meio movimento, o que facilita seu trabalho de cortar-lhe o estômago.')
+        print('Seu oponente acerta-lhe o joelho, mas perde o equilíbrio em meio movimento, o que facilita seu trabalho de cortar-lhe o estômago.')
     elif mensagem == 5:
         print("Você e seu oponente atacam ao mesmo tempo, vocês se atingem com o mesmo golpe ao lado da face. Os dois sacodem a cabeça, desorientados.")
     playervidafinal = playervidalocal - inimigodano
