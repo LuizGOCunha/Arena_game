@@ -27,7 +27,7 @@ def ataque(vidaalvo, dano):
 def defesa(playervidalocal, playerdanolocal, inimigovida, inimigodano, contador3):
     playervidalocal = (ataque(playervidalocal, inimigodano/2))
     contador3 += 1
-    playerdanolocal += playerdanolocal/5
+    playerdanolocal += playerdanolocal/20
     print("Você ergue suas mãos e tolera o impacto do golpe. Reservando sua energia para dar o troco.")
     return playervidalocal, playerdanolocal, contador3
 
